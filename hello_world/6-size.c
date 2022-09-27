@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf\x
+	printf % \x(" ")
 	return(0)
 }

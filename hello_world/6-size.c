@@ -7,6 +7,11 @@
  */
 int main(void)
 {
-	printf%w(" ")
-	return(0)
+
+	printf("Size of char:%zu", 1 byte(s));
+	printf("Size of int:%zu", 4 byte(s));
+	printf("Size of long int:%zu", 8 byte(s));
+	printf("Size of a long long int:%zu", 8 byte(s));
+	printf("Size of a float: 4 byte:%zu", 4 byte(s));
+	return (0);
 }

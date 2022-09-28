@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
-* main - Entry point
-* return: End of the program.
+*main - Entry point
+*Return: Always 0 (Succes)
 */
+
 int main(void)
 {
 	int n;
+	int Last = n % 10;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	int Last = n % 10;
 
 	if (Last > 5)
 	{

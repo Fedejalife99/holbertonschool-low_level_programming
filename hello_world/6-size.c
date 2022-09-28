@@ -7,11 +7,15 @@
  */
 int main(void)
 {
-
-	printf("Size of char:%zu", 1 byte(s));
-	printf("Size of int:%zu", 4 byte(s));
-	printf("Size of long int:%zu", 8 byte(s));
-	printf("Size of a long long int:%zu", 8 byte(s));
-	printf("Size of a float: 4 byte:%zu", 4 byte(s));
+int chara = 1;
+int inta = 4;
+int longint = 8;
+int longlongint = 8;
+int floata = 4;
+	printf("Size of char:%d byte(s)", chara);
+	printf("Size of int:%d byte(s)", inta);
+	printf("Size of long int:%d byte(s)", longint);
+	printf("Size of a long long int:%d byte(s)", longlongint);
+	printf("Size of a float: 4 byte:%d byte(s)", floata);
 	return (0);
 }

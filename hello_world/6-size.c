@@ -9,7 +9,7 @@ int main(void)
 {
 int chara = 1;
 int inta = 4;
-int longint = 8;
+int longint = 4;
 int longlongint = 8;
 int floata = 4;
 	printf("Size of char: %d byte(s)\n", chara);

@@ -11,8 +11,8 @@ char letra = 'a';
 do {
 putchar(letra);
 letra++;
-"\n";
 } while (letra <= 'z');
+putchar('\n');
 return (0);
 }
 

@@ -12,7 +12,7 @@ char letraM = 'A';
 do {
 	putchar(letram);
 	letram++;
-	} while (letram <= 'z' && letraM <= 'Z');
+	} while (letram <= 'z');
 do {
 	putchar(letraM);
 	letraM++;

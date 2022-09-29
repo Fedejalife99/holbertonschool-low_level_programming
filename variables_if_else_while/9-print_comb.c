@@ -17,9 +17,9 @@ int main(void)
 		if (a < '9')
 		{
 			putchar(b);
+			putchar(c);
 		}
-		putchar(c);
 	}
-
+	putchar(c);
 	return (0);
 }

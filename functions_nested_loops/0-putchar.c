@@ -6,5 +6,13 @@
 
 void _putchar(void)
 {
- 	printf("_putchar\n");
-}	
+ 	char ty[8]= "_putchar";
+	int i = 0;
+
+	for (i = 0; i <= 8; i++)
+	{
+		_putchar(ty[i]);
+	}
+	
+
+}

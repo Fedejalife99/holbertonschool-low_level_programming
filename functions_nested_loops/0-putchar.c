@@ -1,12 +1,10 @@
-#include<stdio.h>
+#include "main.h"
+/*
+ *
+ *Print_putchar - This function print _putchar
+ */
 
-/**
-*main - Entry point
-*Return:0
-*/
-
-int main(void)
+void _putchar(void)
 {
-	puts("_putchar");
-	return(0);
-}
+ 	printf("_putchar\n");
+}	

@@ -4,15 +4,17 @@
  *Print_putchar - This function print _putchar
  */
 
-void _putchar(void)
+int main (void)
 {
- 	char ty[8]= "_putchar";
-	int i = 0;
-
-	for (i = 0; i <= 8; i++)
-	{
-		_putchar(ty[i]);
-	}
-	
-
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
+	return (0);
 }
+

@@ -1,10 +1,11 @@
 #include "main.h"
-/*
- *
- *Print_putchar - This function print _putchar
+
+/**
+ * main - Entry point
+ * Return: End of the program
  */
 
-int main (void)
+int main(void)
 {
 	putchar('_');
 	putchar('p');

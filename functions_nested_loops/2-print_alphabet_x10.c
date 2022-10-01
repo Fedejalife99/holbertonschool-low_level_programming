@@ -9,15 +9,15 @@ void print_alphabet_x10(void)
 {
 	char alf = 'a';
 	int contador = 0;
+	
 
-	for (alf = 'a'; contador == 250; alf++)
-	{
+	do {
 		_putchar(alf);
-
+		alf++;
 		if (alf == 'z')
 		{
 			_putchar('\n');
+			contador++;
 		}
-		contador++;
-	} 
+	} while ( contador <= 10);
 }

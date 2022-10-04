@@ -16,22 +16,30 @@ void times_table(void)
 		for (fac2 = 0; fac2 <= 9; fac2++)
 		{
 			res = fac1 * fac2;
-			if (res <= 10 && res != 0 )
+			if (fac2 == 0)
 			{
-                                _putchar(',');
-                                _putchar(' ');
-                                _putchar(' ');
-				_putchar(res % 10 + '0');
+				_putchar(res + '0');
 			} else if (res == 0)
-			{		
-				_putchar('0');
-			}else
 			{
 				_putchar(',');
-                                _putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0');
+			}
+			else if (res <= 9 && res != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(res % 10 + '0');
+			} else if (fac1 != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(res / 10 + '0');
 				_putchar(res % 10 + '0');
 			}
+
 		}
 		_putchar('\n');
 	}

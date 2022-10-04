@@ -12,18 +12,31 @@ void jack_bauer(void)
 	if (horas < 24)
 	{
 		do {
+		if (minutos == 0)
+		{
+			_putchar((horas / 10) + '0');
+			_putchar((horas % 10) + '0');
+			_putchar(':');
+			_putchar('0');
+			_putchar('0');
+			_putchar(10);
+		}
 		minutos++;
+		if (minutos != 0)
+		{
+
 		_putchar((horas / 10) + '0');
 		_putchar((horas % 10) + '0');
 		_putchar(':');
 		_putchar((minutos / 10) + '0');
 		_putchar((minutos % 10) + '0');
 		_putchar(10);
-		if (minutos == 60)
+		}
+		if (minutos == 59)
 		{
 			minutos = 0;
 			horas++;
 		}
-		} while (horas + minutos <= 81);
+		} while (horas <= 23 && minutos <= 59);
 	}
 }

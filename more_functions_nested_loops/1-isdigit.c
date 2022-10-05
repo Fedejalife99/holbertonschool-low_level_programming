@@ -11,5 +11,9 @@ int _isdigit(int c)
 	{
 		return (1);
 	}
+	if (c == 0 && c < 57)
+	{
+		return (1);
+	}
 	return (0);
 }

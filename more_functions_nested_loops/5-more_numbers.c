@@ -1,4 +1,7 @@
 #include "main.h"
+/**
+ * more_numbers - function
+ */
 
 void more_numbers(void)
 {

@@ -3,6 +3,7 @@
  **_strcpy - function
  *@dest: char
  *@src: char
+ *Return: dest
  */
 
 

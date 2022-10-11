@@ -7,7 +7,7 @@
 
 void rev_string(char *s)
 {
-	int q = 0; 
+	int q = 0;
 	int p = 0;
 	char i;
 
@@ -15,16 +15,15 @@ void rev_string(char *s)
 	{
 		p++;
 	}
-	
+
 	while (p > q)
 	{
 		i = s[p];
 		s[p] = s[q];
 		s[q] = i;
-		p--;
-		q++;
+		--p;
+		++q;
 	}
-	printf("%s", s);
 }
 
 			

@@ -22,7 +22,7 @@ void puts_half(char *str)
 	{
 		p = (cont - 1) / 2;
 
-		while (p + 1 <= cont)
+		while (p <= cont)
 		{
 			p++;
 			_putchar(str[p]);

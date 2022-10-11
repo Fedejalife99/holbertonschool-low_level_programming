@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int p;
 	int i = 0;
-	int cont = 0;
+	int cont = 1;
 
 	while (str[i] != '\0')
 	{

@@ -22,10 +22,10 @@ void puts_half(char *str)
 	{
 		p = (cont - 1) / 2;
 
-		while (p <= cont)
+		while (p + 1 <= cont)
 		{
-			_putchar(str[p]);
 			p++;
+			_putchar(str[p]);
 		}
 	}
 	else
@@ -33,8 +33,8 @@ void puts_half(char *str)
 		p = cont / 2;
 		while (p <= cont)
 		{
-			_putchar(str[p]);
 			p++;
+			_putchar(str[p]);
 		}
 	}
 	_putchar('\n');

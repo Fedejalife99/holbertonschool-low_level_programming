@@ -1,26 +1,24 @@
 #include "main.h"
 
 /**
- *_strchr - function
- *@s: char
- *@c: char
- *Return: s or NULL
+ * _strchr - function
+ * @s: char
+ * @c: char
+ * Return: s or NULL
  *
 */
 
 char *_strchr(char *s, char c)
 {
+	int i = 0;
 
-	while (*s)
+	while (s[i] != '\0')
 	{
-		if (*s == c)
+		if (s[i] == c)
 		{
-			return (s);
+			return (s + i);
 		}
-		s++;
+		i++;
 	}
 	return (NULL);
-
-
 }
-

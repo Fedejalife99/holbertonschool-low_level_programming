@@ -2,7 +2,10 @@
 
 /**
  *_memcpy - function
- *
+ *@dest: char
+ *@src: char
+ *@n: unsigned int
+ *Return: p
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)

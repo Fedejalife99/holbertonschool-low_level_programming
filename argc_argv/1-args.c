@@ -3,7 +3,8 @@
 /**
  * main - function
  * @argc: int
- * @argv: char
+ * @agrv: char
+ * Return: 0
  */
 
 int main(int argc, char *agrv[])

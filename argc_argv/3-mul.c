@@ -2,10 +2,13 @@
 #include <stdlib.h>
 /**
  *main - function
- *
+ *@argc: int
+ *@argv: char
+ *Return: 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
+
 {
 	int i;
 
@@ -22,7 +25,7 @@ int main (int argc, char *argv[])
 		result = result * atoi(argv[i]);
 	}
 	printf("%d\n", result);
-	
+
 	return (0);
 }
 

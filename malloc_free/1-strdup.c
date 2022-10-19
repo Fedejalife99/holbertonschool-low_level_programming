@@ -1,7 +1,7 @@
 #include "main.h"
 #include<stdio.h>
 #include<stdlib.h>
-
+#include<string.h>
 /**
  *_strdup - function
  *@str: pointer to a char
@@ -11,7 +11,7 @@ char *_strdup(char *str)
 {
 	char *h = malloc(sizeof(char) * strlen(str));
 
-	int i = 0;
+	 unsigned int i = 0;
 
 	if (strlen(str) == 0)
 	{

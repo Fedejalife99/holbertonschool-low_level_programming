@@ -17,10 +17,11 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	if (str == NULL)
+	if (*str == NULL)
 	{
 		return (0);
 	}
+
 	for (i = 0; i < strlen(str); i++)
 	{
 		h[i] = str[i];

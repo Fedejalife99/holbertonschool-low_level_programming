@@ -13,11 +13,7 @@ char *_strdup(char *str)
 
 	unsigned int i = 0;
 
-	if (sizeof(char) * strlen(str) == 0)
-	{
-		return (NULL);
-	}
-	if (*str == NULL)
+	if (str == NULL)
 	{
 		return (0);
 	}
@@ -25,7 +21,6 @@ char *_strdup(char *str)
 	for (i = 0; i < strlen(str); i++)
 	{
 		h[i] = str[i];
-
 	}
 
 	h[i + 1] = '\0';

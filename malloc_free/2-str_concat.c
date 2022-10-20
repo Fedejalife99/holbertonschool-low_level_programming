@@ -26,6 +26,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (0);
 	}
+	if (s1 == 0 || s2 == 0)
+	{
+		return (0);
+	}
 	for (i = 0; i < strlen(s1); i++)
 	{
 		h[i] = s1[i];

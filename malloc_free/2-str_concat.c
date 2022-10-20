@@ -22,6 +22,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (h);
 	}
+	if (h == NULL)
+	{
+		return (NULL);
+	}
 	if (h == 0)
 	{
 		return (0);

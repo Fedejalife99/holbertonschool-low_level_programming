@@ -13,6 +13,10 @@ char *_strdup(char *str)
 
 	unsigned int i = 0;
 
+	if (h == 0)
+	{
+		return (0);
+	}
 	if (str == NULL)
 	{
 		return (NULL);

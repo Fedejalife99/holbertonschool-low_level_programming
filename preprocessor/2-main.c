@@ -1,6 +1,13 @@
 #include <stdio.h>
+/**
+ *main - function
+ *Return: 0
+ *
+ */
 
-void print_name(void)
+int main(void)
 {
-	print("%s", _FILE_);
+	printf("%s\n", __FILE__);
+
+	return (0);
 }

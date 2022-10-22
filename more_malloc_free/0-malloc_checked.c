@@ -20,7 +20,7 @@ void *malloc_checked(unsigned int b)
 
 	if (p == NULL)
 	{
-		return (pi);
+		exit(pi);
 	}
 	return (p);
 }

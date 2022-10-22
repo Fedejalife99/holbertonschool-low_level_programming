@@ -18,7 +18,7 @@ void *malloc_checked(unsigned int b)
 
 	int *pi = &i;
 
-	if (b == 0)
+	if (b == NULL)
 	{
 		return (pi);
 	}

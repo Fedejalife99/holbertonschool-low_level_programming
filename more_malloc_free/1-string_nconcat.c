@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * string_nconcat - function that concatenate n chars the second string
  * @s1: pointer to a char
@@ -16,19 +17,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	unsigned int j;
 
-	char *h  = malloc(sizeof(char) * strlen(s1) + strlen(s2));
+	char *h  = malloc(sizeof(char) * strlen(s1) + n );
 
-	if (h == NULL)
-	{
-		return (NULL);
-	}
 	if (s1 == NULL)
 	{
 		s1 = " ";
 	}
+	
 	if (s2 == NULL)
 	{
 		s2 = " ";
+	}
+
+	if (h == NULL)
+	{
+		return (NULL);
 	}
 
 	for (i = 0; i < strlen(s1); i++)

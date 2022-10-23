@@ -17,10 +17,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	unsigned int j;
 
-	char *h = malloc(sizeof(char) * strlen(s1) + n);
+	char *h = malloc(sizeof(char) * strlen(s1) + n + 1);
 
 	if (strlen(s1) == 0 || strlen(s2) == 0)
-		return (NULL);
+	{
+		if (s1 == 0)
+			s1 = "";
+		if (s2 == 0)
+			s2 = "";
+	}
 	if (s1 == NULL)
 		s1 = " ";
 	if (s2 == NULL)

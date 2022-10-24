@@ -13,9 +13,9 @@ char *_strdup(char *str)
 
 	unsigned int i = 0;
 
-	if (h == 0)
+	if (h == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 	if (str == NULL || str == 0)
 	{

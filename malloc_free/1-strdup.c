@@ -13,10 +13,15 @@ char *_strdup(char *str)
 
 	unsigned int i = 0;
 
-	if (str == NULL || str == 0)
+	if (str == NULL)
 		return ('\0');
 	if (h == NULL)
 		return (NULL);
+	if (str == '\0')
+	{	
+		*h = '\0';
+		return (h);
+	}
 	for (i = 0; i < strlen(str); i++)
 	{
 		h[i] = str[i];

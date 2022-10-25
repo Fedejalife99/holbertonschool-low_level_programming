@@ -30,14 +30,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	if (h == 0)
-	{
-		return (NULL);
-	}
-	if (s1 == 0 || s2 == 0)
-	{
-		return (0);
-	}
 	for (i = 0; i < strlen(s1); i++)
 	{
 		h[i] = s1[i];

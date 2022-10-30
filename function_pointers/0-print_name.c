@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdio.h>
 /**
  *f - function
  *@a: array of chars
@@ -10,7 +11,7 @@ void *f(char *a)
 	int i;
 
 	for (i = 0; a[i] != '\0'; i++)
-		_putchar(a[i]);
+		putchar(a[i]);
 	return (0);
 }
 

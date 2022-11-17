@@ -9,7 +9,9 @@
 void free_list(list_t *head)
 {
 	list_t *frii;
-
+	
+	if (head == NULL)
+		return;
 	while (head->next)
 	{
 		frii = head;
@@ -17,6 +19,14 @@ void free_list(list_t *head)
 		head = head->next;
 		free(frii);
 	}
+	if (head->next == NULL)
+	{
+		frii = head;
+		free(frii->str);
+		head = head->next;
+		free(frii);
+	}
+
 }
 
 

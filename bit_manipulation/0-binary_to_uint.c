@@ -5,7 +5,7 @@
 /**
  * binary_to_unit - function that prints the binary representation of a number
  * @b: const char
- * return: number in base 10
+ * Return: number in base 10
  */
 
 

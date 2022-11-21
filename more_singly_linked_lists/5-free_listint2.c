@@ -12,10 +12,9 @@ void free_listint2(listint_t **head)
 
 	listint_t *frii, *aux;
 
-	aux = *head;
-
 	if (head == NULL)
 		return;
+	aux = *head;
 
 	while (aux->next)
 	{
@@ -23,6 +22,7 @@ void free_listint2(listint_t **head)
 		aux = aux->next;
 		free(frii);
 	}
+
 	if (aux->next == NULL)
 	{
 		frii = aux;

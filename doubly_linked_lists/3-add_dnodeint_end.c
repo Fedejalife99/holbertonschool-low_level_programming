@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * add_dnodeint_end - function that frees a list
+ * add_dnodeint_end - function that adds a new node at the end of a list
  * @head: pointer to a pointer to a struct
  * @n: const int
  * Return: new

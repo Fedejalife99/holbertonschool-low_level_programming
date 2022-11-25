@@ -17,15 +17,20 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	char *buffer;
 
-	n = open(filename, O_RDONLY, O_CREAT, 0600);
 
 	if (filename == NULL)
 		return (0);
 
+	n = open(filename, O_RDONLY, O_CREAT, 0600);
+	
 	if (n == -1)
 		return (-1);
 
 	buffer = malloc(letters);
+	
+	if (buffer == NULL)
+		return (0);
+
 
 	s = read(n, buffer, letters);
 
@@ -34,7 +39,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (-1);
 		free(buffer);
 	}
+
 	w = write(1, buffer, s);
+
 	if (w == -1)
 		return (0);
 
